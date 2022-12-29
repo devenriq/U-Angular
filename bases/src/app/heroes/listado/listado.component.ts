@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
 })
 export class ListadoComponent  {
 
+  heros: string[]=['SpiderMan', 'IronMan', 'Hulk']
+  erasedHeros:string[] = []
+
+  borrarHero(){
+    const heroErased = this.heros.pop() || ''
+    this.erasedHeros.push(heroErased)
+  }
 
 }
