@@ -5,8 +5,12 @@
 
 <button (click)="borrarHero()">Borrar</button>
 
+<ng-template #noErased>
+  <h3>No se ha borrado nada.</h3>
+</ng-template>
+
 <div>
-  <h3 *ngIf="erasedHeros.length > 0">El héroe borrado es:</h3>
+  <h3 *ngIf="erasedHeros.length > 0; else noErased">El héroe borrado es:</h3>
   <strong *ngFor="let erasedHero of erasedHeros"
     ><ul>
       <li>{{ erasedHero }}</li>
