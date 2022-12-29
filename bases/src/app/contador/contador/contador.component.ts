@@ -20,7 +20,7 @@ export class ContadorComponent {
   title: string= 'Contador App';
   number: number = 0;
 
-  base: number = 293884;
+  base: number = 5;
 
   acumulate(value:number){
     this.number += this.base * value
