@@ -12,6 +12,4 @@ export class MainPageComponent {
     poder: 430
   }
 
-  constructor(){
-  }
 }

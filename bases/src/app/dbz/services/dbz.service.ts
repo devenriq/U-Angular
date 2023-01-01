@@ -15,8 +15,7 @@ export class DbzService{
     return [...this._personajes]
   }
 
-  constructor(){
-  }
+  constructor(){}
 
   addCharacter(personaje:Personaje){
     this._personajes.push(personaje)
